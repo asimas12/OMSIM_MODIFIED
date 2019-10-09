@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d97330f-8868-4b43-bb5c-9ba99db2cc78" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omsim" beforeDir="false" afterPath="$PROJECT_DIR$/omsim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omsim/omsim/src/omsim/bnx.py" beforeDir="false" afterPath="$PROJECT_DIR$/omsim/omsim/src/omsim/bnx.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omsim/omsim/src/omsim/noise.py" beforeDir="false" afterPath="$PROJECT_DIR$/omsim/omsim/src/omsim/noise.py" afterDir="false" />
@@ -57,8 +58,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/omsim/omsim/src/omsim/omsim.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="251" column="42" selection-start-line="251" selection-start-column="42" selection-end-line="251" selection-end-column="42" />
+            <state relative-caret-position="624">
+              <caret line="280" column="69" lean-forward="true" selection-start-line="280" selection-start-column="69" selection-end-line="280" selection-end-column="69" />
             </state>
           </provider>
         </entry>
@@ -574,8 +575,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/omsim/omsim/src/omsim/omsim.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="251" column="42" selection-start-line="251" selection-start-column="42" selection-end-line="251" selection-end-column="42" />
+        <state relative-caret-position="624">
+          <caret line="280" column="69" lean-forward="true" selection-start-line="280" selection-start-column="69" selection-end-line="280" selection-end-column="69" />
         </state>
       </provider>
     </entry>
