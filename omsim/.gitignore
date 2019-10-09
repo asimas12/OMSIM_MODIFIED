@@ -1,0 +1,14 @@
+build
+description
+dist
+plot
+**/omsim.egg-info
+**/*bnx
+**/*bed
+**/*stats
+**/hg38.fa
+**/hg38.fa.gz
+**/ecoli/omsim.byte*
+**/initial
+**/__pycache__
+**/*pyc
