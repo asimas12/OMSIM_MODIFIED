@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d97330f-8868-4b43-bb5c-9ba99db2cc78" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/research_new.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/omsim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/omsim.wiki" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omsim" beforeDir="false" afterPath="$PROJECT_DIR$/omsim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omsim/omsim/src/omsim/bnx.py" beforeDir="false" afterPath="$PROJECT_DIR$/omsim/omsim/src/omsim/bnx.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omsim/omsim/src/omsim/noise.py" beforeDir="false" afterPath="$PROJECT_DIR$/omsim/omsim/src/omsim/noise.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omsim/omsim/src/omsim/omsim.py" beforeDir="false" afterPath="$PROJECT_DIR$/omsim/omsim/src/omsim/omsim.py" afterDir="false" />
@@ -64,8 +57,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/omsim/omsim/src/omsim/omsim.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="240" column="104" lean-forward="true" selection-start-line="240" selection-start-column="104" selection-end-line="240" selection-end-column="104" />
+            <state relative-caret-position="189">
+              <caret line="251" column="42" selection-start-line="251" selection-start-column="42" selection-end-line="251" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -319,7 +312,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="285" y="45" width="1250" height="956" extended-state="0" />
+    <frame x="373" y="238" width="1250" height="956" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4988426" visible="true" weight="0.17493898" />
@@ -581,8 +574,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/omsim/omsim/src/omsim/omsim.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="240" column="104" lean-forward="true" selection-start-line="240" selection-start-column="104" selection-end-line="240" selection-end-column="104" />
+        <state relative-caret-position="189">
+          <caret line="251" column="42" selection-start-line="251" selection-start-column="42" selection-end-line="251" selection-end-column="42" />
         </state>
       </provider>
     </entry>
