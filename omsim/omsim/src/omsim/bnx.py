@@ -80,7 +80,6 @@ class BNX:
                 ofile.write('#Qf\tstring\tfloat[N]' + '\n')
                 ofile.write('# Quality Score QX11: Label SNR for channel 1' + '\n')
                 ofile.write('# Quality Score QX12: Label Intensity for channel 1' + '\n')
-        
 
         def write_rmap_entry_cut_orig(self, info, rmap, nicks, ofile):
                 count = 0
@@ -135,7 +134,8 @@ class BNX:
                 length = info[1] * relative_scan_stretch
                 rmap += '\t' + '{0:.2f}'.format(length)
                 ofile.write(rmap + '\n')
-                ofile.write("pos: " + str(l) + " " + str(s) + " " + str(e) + '\n')
+                ofile.write("length: " + str(l) + " shift: " + str(s) + " end: " + str(e) + '\n')
+                ofile.write('\n')
 
         def write_rmap_entry_lsh_orig(self, info, rmap, nicks, ofile, l, s, e):
                 count = 0
@@ -148,7 +148,8 @@ class BNX:
                 length = info[1]
                 rmap += '\t' + '{0:.2f}'.format(length)
                 ofile.write(rmap + '\n')
-                ofile.write("pos: " + str(l) + " " + str(s) + " " + str(e) + '\n')
+                ofile.write("length: " + str(l) + " shift: " + str(s) + " end: " + str(e) + '\n')
+                ofile.write('\n')
 
         def write_bnx_entry(self, info, nicks, ofile, chip_settings, relative_scan_stretch):
                 count = 0

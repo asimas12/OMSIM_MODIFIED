@@ -26,10 +26,7 @@
                                 <label>label_0</label>
                         </enzyme>
                         <!--Multiple enzymes can be specified, possibly with different labels-->
-                        <enzyme>
-                                <id>BssSI</id>
-                                <label>label_1</label>
-                        </enzyme>
+
                 </enzymes>
                 
                 <!--OPTIONAL PARAMETERS-->

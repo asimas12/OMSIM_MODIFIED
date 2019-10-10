@@ -190,6 +190,7 @@ class Noise:
                                 idx = 0
                                 shift -= size
                                 end -= size
+                true_rmaps = tp
                 # sort labels
                 molecule = self.sort_labels(fp, tp)
                 # break at fragile sites
@@ -197,7 +198,7 @@ class Noise:
                 # remove strand and [T|F]P information and randomise TP
                 molecule = [[self.nick_position(p, self.settings.nick_sd)[0], p[-1]] for p in molecule]
                 molecule = [p for p in molecule if p[0] < length]
-                return length, molecule, meta, shift, end
+                return length, molecule, meta, shift, end, true_rmaps
 
         def generate_molecule(self, nicks, size):
                 #determine read position
@@ -229,13 +230,14 @@ class Noise:
                                 shift -= size
                                 end -= size
                 #sort labels
+                true_rmaps = tp
                 molecule = self.sort_labels(fp, tp)
                 #break at fragile sites
                 length, molecule = self.fragile_sites(length, molecule)
                 # remove strand and [T|F]P information and randomise TP
                 molecule = [[self.nick_position(p, self.settings.nick_sd)[0], p[-1]] for p in molecule]
                 molecule = [p for p in molecule if p[0] < length]
-                return length, molecule, meta, shift, end
+                return length, molecule, meta, shift, end, true_rmaps
         
         
         def cut_long_molecule(self, l, m):
@@ -293,10 +295,10 @@ class Noise:
                         l = -1
                         if clean:
                             while l < 0:
-                                l, m, meta, s, e = self.generate_molecule_clean(fks[idx] if self.strand() else rcks[idx], seqLens[idx])
+                                l, m, meta, s, e, true_rmaps = self.generate_molecule_clean(fks[idx] if self.strand() else rcks[idx], seqLens[idx])
                         else:
                             while l < 0:
-                                l, m, meta, s, e = self.generate_molecule(fks[idx] if self.strand() else rcks[idx], seqLens[idx])
+                                l, m, meta, s, e, true_rmaps = self.generate_molecule(fks[idx] if self.strand() else rcks[idx], seqLens[idx])
 
 
                         meta[0] = idx
@@ -313,7 +315,7 @@ class Noise:
                                 molecule2 = []
                                 if self.settings.min_mol_len <= l:
                                         size += l
-                                        yield l,s,e, m, meta
+                                        yield l,s,e, m, meta, true_rmaps
         
         
         def chip_stretch_factor(self):

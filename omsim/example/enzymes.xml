@@ -13,10 +13,5 @@
                 <fn>0.15</fn>
         </enzyme>
         <!--Another enzyme-->
-        <enzyme>
-                <id>BssSI</id>
-                <pattern>CACGAG</pattern>
-                <fp>1.5</fp>
-                <fn>0.20</fn>
-        </enzyme>
+
 </enzymes>

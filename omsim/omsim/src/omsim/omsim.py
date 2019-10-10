@@ -197,22 +197,34 @@ def omsim(settings, clean):
                         chip_settings['scans'] += 1
                         scan_stretch = noise.scan_stretch_factor(chip_settings['stretch_factor'])
                         lse = []
-                        for l, s, e, m, meta in noise.generate_scan(seq_lens, cum_seq_lens, fns, rns, clean):
+
+                        for l, s, e, m, meta, true_rmaps in noise.generate_scan(seq_lens, cum_seq_lens, fns, rns, clean):
                                         moleculeID += 1
                                         molecule = {}
+                                        molecule2 = []
                                         lse = [l,s,e]
                                         pos.append(lse)
                                         for label in settings.labels:
                                                 molecule[label] = []
                                         for nick in m:
                                                 molecule[nick[1]['label']].append(nick[0])
+                                        for nick2 in true_rmaps:
+                                                molecule2.append(nick2[0])
                                         for label in settings.labels:
                                                 if settings.min_nicks <= len(molecule[label]):
-                                                        molecules[label].append((l,s,e, molecule[label], chip_settings['scans'], meta))
+                                                        molecules[label].append((l,s,e, molecule[label], chip_settings['scans'], meta, molecule2))
                                                         relative_stretch.append(noise.mol_stretch_factor(scan_stretch) / chip_settings['stretch_factor'])
                                         chip_settings['molecule_count'] += 1
                                         chip_settings['size'] += l
                 # write output
+
+                with open('fns_rns.rf', 'w+') as ofile9:
+                    ofile9.write("FNS: " + '\n')
+                    for item in fns[0]:
+                        ofile9.write(str(item[0]) + " ")
+                    ofile9.write('\n' + "RNS: " + '\n')
+                    for item in rns[0]:
+                        ofile9.write(str(item[0]) + " ")
 
                 count = 0
                 for label in settings.labels:
@@ -223,6 +235,7 @@ def omsim(settings, clean):
                                 ofile4 = open(settings.prefix + '.' + label + '.' + str(chip) + '.original' '.cut', 'w+')
                                 ofile6 = open(settings.prefix + '.' + label + '.' + str(chip) + '.original' '.com', 'w+')
                                 ofile8 = open(settings.prefix + '.' + label + '.' + str(chip) + '.original' '.lse', 'w+')
+
                         else:
 
                                 ofile = open(settings.prefix + '.' + label + '.' + str(chip) + '.with_error' '.bnx', 'w+')
@@ -235,18 +248,18 @@ def omsim(settings, clean):
                             bnx.write_bnx_header(ofile2, label, chip_settings)
                         else:
                             bnx.write_bnx_header(ofile, label, chip_settings)
-                        for l, size, e,  m, s, meta in molecules[label]:
+                        for l, size, e,  m, s, meta, true_rmaps in molecules[label]:
                                 moleculeID += 1
                                 if clean:
                                     bnx.write_bnx_entry((moleculeID, l, s), m, ofile2, chip_settings, 1)
-                                    bnx.write_rmap_entry_cut_orig((moleculeID, l, s), str('_Rmap') + str(count) + ': ',
-                                                                  m, ofile4)
+                                    bnx.write_rmap_entry_cut_orig((moleculeID, l, s), str('_Rmap') + str(count) + ': ', true_rmaps, ofile4)
                                     bnx.write_rmap_entry_com_orig((moleculeID, l, s), str('_Rmap') + str(count) + ': ',
-                                                                  m,
+                                                                  true_rmaps,
                                                                   ofile6)
                                     bnx.write_rmap_entry_lsh_orig((moleculeID, l, s), str('_Rmap') + str(count) + ': ',
-                                                                  m,
+                                                                  true_rmaps,
                                                                   ofile8, l, size, e)
+
                                 else:
                                     bnx.write_bnx_entry((moleculeID, l, s), m, ofile, chip_settings, relative_stretch[moleculeID - 1])
                                     bnx.write_rmap_entry_cut_error((moleculeID, l, s), str('_Rmap') + str(count) + ': ', m, ofile3, relative_stretch[moleculeID - 1])
@@ -254,7 +267,7 @@ def omsim(settings, clean):
                                                          ofile5, relative_stretch[moleculeID - 1])
                                     bnx.write_rmap_entry_lsh_error((moleculeID, l, s), str('_Rmap') + str(count) + ': ',
                                                                   m,
-                                                                  ofile7, l, size, e)
+                                                                  ofile7, relative_stretch[moleculeID - 1], l, size, e)
                                 count=count+1
                         if not clean:
                             ofile.close()
@@ -348,5 +361,5 @@ def main(argv=None):
         for settings in simulations:
                 print(settings)
                 omsim(settings, True)
-               # omsim(settings, False)
+                omsim(settings, False)
         return 0
