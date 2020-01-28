@@ -123,7 +123,7 @@ class BNX:
                 rmap += '\t' + '{0:.2f}'.format(length)
                 ofile.write(rmap + '\n')
 
-        def write_rmap_entry_lsh_error(self, info, rmap, nicks, ofile, relative_scan_stretch, l, s, e):
+        def write_rmap_entry_lsh_error(self, info, rmap, nicks, ofile, relative_scan_stretch, l, s, e, rf):
                 count = 0
                 last = 0
                 for pos in nicks:
@@ -134,10 +134,10 @@ class BNX:
                 length = info[1] * relative_scan_stretch
                 rmap += '\t' + '{0:.2f}'.format(length)
                 ofile.write(rmap + '\n')
-                ofile.write("length: " + str(l) + " shift: " + str(s) + " end: " + str(e) + '\n')
+                ofile.write("length: " + str(l) + " shift: " + str(s) + " end: " + str(e) + '\n'  + rf)
                 ofile.write('\n')
 
-        def write_rmap_entry_lsh_orig(self, info, rmap, nicks, ofile, l, s, e):
+        def write_rmap_entry_lsh_orig(self, info, rmap, nicks, ofile, l, s, e, rf):
                 count = 0
                 last = 0
                 for pos in nicks:
@@ -148,7 +148,7 @@ class BNX:
                 length = info[1]
                 rmap += '\t' + '{0:.2f}'.format(length)
                 ofile.write(rmap + '\n')
-                ofile.write("length: " + str(l) + " shift: " + str(s) + " end: " + str(e) + '\n')
+                ofile.write("length: " + str(l) + " shift: " + str(s) + " end: " + str(e) + '\n' + rf)
                 ofile.write('\n')
 
         def write_bnx_entry(self, info, nicks, ofile, chip_settings, relative_scan_stretch):

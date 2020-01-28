@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/omsim/omsim/src/omsim/noise.py" line="178" mnemonic="5" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="7d97330f-8868-4b43-bb5c-9ba99db2cc78" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omsim/example/enzymes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/omsim/example/enzymes.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omsim/example/example.xml" beforeDir="false" afterPath="$PROJECT_DIR$/omsim/example/example.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omsim/omsim/src/omsim/bnx.py" beforeDir="false" afterPath="$PROJECT_DIR$/omsim/omsim/src/omsim/bnx.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omsim/omsim/src/omsim/noise.py" beforeDir="false" afterPath="$PROJECT_DIR$/omsim/omsim/src/omsim/noise.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omsim/omsim/src/omsim/omsim.py" beforeDir="false" afterPath="$PROJECT_DIR$/omsim/omsim/src/omsim/omsim.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/omsim/test/ecoli/example.xml" beforeDir="false" afterPath="$PROJECT_DIR$/omsim/test/ecoli/example.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/omsim/test/hsapiens/example.xml" beforeDir="false" afterPath="$PROJECT_DIR$/omsim/test/hsapiens/example.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,26 +28,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/omsim/omsim/src/omsim/noise.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="317" selection-start-line="317" selection-end-line="317" />
+            <state relative-caret-position="138">
+              <caret line="297" column="28" selection-start-line="297" selection-start-column="28" selection-end-line="297" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/omsim/omsim/src/omsim/util.py">
+        <entry file="file://$PROJECT_DIR$/omsim/omsim/src/omsim/omsim.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2475">
-              <caret line="165" column="44" selection-start-line="165" selection-start-column="44" selection-end-line="165" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/omsim/omsim/src/omsim/cmap.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="81" column="18" selection-start-line="81" selection-start-column="18" selection-end-line="81" selection-end-column="18" />
+            <state relative-caret-position="171">
+              <caret line="214" column="148" selection-start-line="214" selection-start-column="148" selection-end-line="214" selection-end-column="148" />
             </state>
           </provider>
         </entry>
@@ -60,16 +56,25 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/omsim/omsim/src/omsim/omsim.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="247" column="40" selection-start-line="247" selection-start-column="40" selection-end-line="247" selection-end-column="40" />
+        <entry file="file://$PROJECT_DIR$/omsim/test/ecoli/ecoli_output.label_0.1.original.lse">
+          <provider selected="true" editor-type-id="LargeFileEditor">
+            <state relative-caret-position="240">
+              <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/omsim/test/ecoli/ecoli_output.label_0.1.original.lse">
+        <entry file="file://$PROJECT_DIR$/omsim/test/hsapiens/hsapiens_output.label_0.1.with_error.lse">
+          <provider selected="true" editor-type-id="LargeFileEditor">
+            <state relative-caret-position="119">
+              <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/omsim/test/ecoli/ecoli_output.label_0.1.with_error.lse">
           <provider selected="true" editor-type-id="LargeFileEditor" />
         </entry>
       </file>
@@ -79,28 +84,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/omsim/test/ecoli/ecoli_output.label_0.1.original.cut">
-          <provider selected="true" editor-type-id="LargeFileEditor">
-            <state relative-caret-position="315">
-              <caret line="21" column="56" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="56" />
+        <entry file="file://$PROJECT_DIR$/omsim/omsim/src/omsim/bnx.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="424">
+              <caret line="150" column="101" selection-start-line="150" selection-start-column="101" selection-end-line="150" selection-end-column="101" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/omsim/test/ecoli/ecoli_output.label_0.1.with_error.cut">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+        <entry file="file://$PROJECT_DIR$/omsim/test/ecoli/ecoli_output.label_0.1.original.bnx">
+          <provider selected="true" editor-type-id="LargeFileEditor">
+            <state relative-caret-position="-160">
+              <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/omsim/test/ecoli/ecoli_output.label_0.1.original.bnx">
+        <entry file="file://$PROJECT_DIR$/omsim/test/ecoli/ecoli_output.label_0.1.original.cut">
           <provider selected="true" editor-type-id="LargeFileEditor">
-            <state relative-caret-position="168">
-              <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+            <state relative-caret-position="207">
+              <caret line="14" column="68" selection-start-line="14" selection-start-column="68" selection-end-line="14" selection-end-column="68" />
             </state>
           </provider>
         </entry>
@@ -116,9 +121,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>w+</find>
-      <find>wr</find>
-      <find>look h</find>
       <find>molecules</find>
       <find>cut_er</find>
       <find>rmap_e</find>
@@ -138,7 +140,6 @@
       <find>fragile_s</find>
       <find>bise</find>
       <find>generate_</find>
-      <find>generate_sc</find>
       <find>false</find>
       <find>gener</find>
       <find>generate</find>
@@ -146,6 +147,10 @@
       <find>.git</find>
       <find>:</find>
       <find>fns</find>
+      <find>genome</find>
+      <find>generate_sc</find>
+      <find>rf</find>
+      <find>reache</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -158,17 +163,18 @@
         <option value="$PROJECT_DIR$/omsim/example/example.xml" />
         <option value="$PROJECT_DIR$/omsim/example/enzymes.xml" />
         <option value="$PROJECT_DIR$/omsim/test/ecoli/example.xml" />
+        <option value="$PROJECT_DIR$/omsim/test/hsapiens/example.xml" />
         <option value="$PROJECT_DIR$/omsim/omsim/src/omsim/bnx.py" />
-        <option value="$PROJECT_DIR$/omsim/omsim/src/omsim/noise.py" />
         <option value="$PROJECT_DIR$/omsim/omsim/src/omsim/omsim.py" />
+        <option value="$PROJECT_DIR$/omsim/omsim/src/omsim/noise.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="244" />
-    <option name="y" value="41" />
-    <option name="width" value="1307" />
-    <option name="height" value="956" />
+    <option name="x" value="189" />
+    <option name="y" value="24" />
+    <option name="width" value="1599" />
+    <option name="height" value="963" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -188,18 +194,6 @@
               <item name="research_new" type="b2602c69:ProjectViewProjectNode" />
               <item name="research_new" type="462c0819:PsiDirectoryNode" />
               <item name="omsim" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="research_new" type="b2602c69:ProjectViewProjectNode" />
-              <item name="research_new" type="462c0819:PsiDirectoryNode" />
-              <item name="omsim" type="462c0819:PsiDirectoryNode" />
-              <item name="bin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="research_new" type="b2602c69:ProjectViewProjectNode" />
-              <item name="research_new" type="462c0819:PsiDirectoryNode" />
-              <item name="omsim" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="research_new" type="b2602c69:ProjectViewProjectNode" />
@@ -294,7 +288,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="__main__" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="__main__" type="PythonConfigurationType" factoryName="Python">
       <module name="research_new" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -319,11 +313,6 @@
       <item itemvalue="Python.Unnamed" />
       <item itemvalue="Python.__main__" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.__main__" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -348,21 +337,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="244" y="41" width="1307" height="956" extended-state="0" />
+    <frame x="189" y="24" width="1599" height="963" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4988426" visible="true" weight="0.33203733" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4988426" visible="true" weight="0.25918886" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5011574" side_tool="true" weight="0.17493898" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3298611" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3460648" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49936628" weight="0.35017222" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Debug" order="5" weight="0.38310185" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3298611" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3298611" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.9162968" visible="true" weight="0.3298611" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.083703235" side_tool="true" weight="0.33093524" />
+      <window_info anchor="bottom" id="Debug" order="5" weight="0.34357223" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.85551333" weight="0.3283582" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49936628" weight="0.3295063" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.9150824" visible="true" weight="0.3283582" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.08491762" side_tool="true" visible="true" weight="0.3283582" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.3297362" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -397,9 +386,9 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/omsim/omsim/src/omsim/omsim.py</url>
-          <line>250</line>
-          <option name="timeStamp" value="311" />
+          <url>file://$PROJECT_DIR$/omsim/omsim/src/omsim/noise.py</url>
+          <line>191</line>
+          <option name="timeStamp" value="335" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -549,13 +538,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/omsim/test/ecoli/example.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4">
-          <caret column="38" selection-start-column="38" selection-end-line="1" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/omsim/example/example.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-622">
@@ -577,20 +559,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/omsim/test/ecoli/ecoli_output.label_1.1.with_error.com">
-      <provider selected="true" editor-type-id="LargeFileEditor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omsim/test/ecoli/ecoli_output.label_0.1.with_error.lse">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omsim/test/ecoli/ecoli_output.label_0.1.with_error.com">
-      <provider selected="true" editor-type-id="LargeFileEditor" />
-      <provider editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/omsim/test/ecoli/ecoli_output.label_1.1.with_error.com" />
     <entry file="file://$PROJECT_DIR$/omsim/omsim/src/omsim/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -601,20 +570,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/omsim/omsim/src/omsim/bnx.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1209">
-          <caret line="82" selection-start-line="82" selection-end-line="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/omsim/omsim/src/omsim/cmap.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="81" column="18" selection-start-line="81" selection-start-column="18" selection-end-line="81" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/omsim/omsim/src/omsim/util.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2475">
@@ -622,10 +577,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/omsim/omsim/src/omsim/noise.py">
+    <entry file="file://$PROJECT_DIR$/omsim/omsim/src/omsim/cmap.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="317" selection-start-line="317" selection-end-line="317" />
+        <state relative-caret-position="1215">
+          <caret line="81" column="18" selection-start-line="81" selection-start-column="18" selection-end-line="81" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../PycharmProjects/research_test/main_test">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Research/rmap_rec.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omsim/test/ecoli/ecoli_output.label_0.1.with_error.cut">
+      <provider editor-type-id="text-editor">
+        <state>
+          <caret column="72" lean-forward="true" selection-start-column="72" selection-end-column="72" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="90">
+          <caret line="6" column="67" selection-start-line="6" selection-start-column="67" selection-end-line="6" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omsim/test/hsapiens/example.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omsim/test/ecoli/example.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omsim/test/ecoli/enzymes.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omsim/test/ecoli/ecoli_output.label_0.1.with_error.com">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="LargeFileEditor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omsim/omsim/src/omsim/omsim.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="214" column="148" selection-start-line="214" selection-start-column="148" selection-end-line="214" selection-end-column="148" />
         </state>
       </provider>
     </entry>
@@ -639,42 +646,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/omsim/omsim/src/omsim/omsim.py">
+    <entry file="file://$PROJECT_DIR$/omsim/omsim/src/omsim/noise.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="247" column="40" selection-start-line="247" selection-start-column="40" selection-end-line="247" selection-end-column="40" />
+        <state relative-caret-position="138">
+          <caret line="297" column="28" selection-start-line="297" selection-start-column="28" selection-end-line="297" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/omsim/test/ecoli/ecoli_output.label_0.1.original.bnx">
+    <entry file="file://$PROJECT_DIR$/omsim/omsim/src/omsim/bnx.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="150" column="101" selection-start-line="150" selection-start-column="101" selection-end-line="150" selection-end-column="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omsim/test/ecoli/ecoli_output.label_0.1.with_error.lse">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="LargeFileEditor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omsim/test/ecoli/ecoli_output.label_0.1.original.lse">
       <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="168">
-          <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+        <state relative-caret-position="240">
+          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/omsim/test/ecoli/ecoli_output.label_0.1.original.com">
       <provider selected="true" editor-type-id="LargeFileEditor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/omsim/test/ecoli/ecoli_output.label_0.1.original.lse">
-      <provider selected="true" editor-type-id="LargeFileEditor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/omsim/test/ecoli/ecoli_output.label_0.1.original.cut">
       <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="315">
-          <caret line="21" column="56" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="56" />
+        <state relative-caret-position="207">
+          <caret line="14" column="68" selection-start-line="14" selection-start-column="68" selection-end-line="14" selection-end-column="68" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/omsim/test/ecoli/ecoli_output.label_0.1.with_error.cut">
-      <provider editor-type-id="LargeFileEditor">
-        <state relative-caret-position="45">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+    <entry file="file://$PROJECT_DIR$/omsim/test/hsapiens/hsapiens_output.label_0.1.with_error.lse">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="119">
+          <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/omsim/test/ecoli/ecoli_output.label_0.1.original.bnx">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="-160">
+          <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
         </state>
       </provider>
     </entry>

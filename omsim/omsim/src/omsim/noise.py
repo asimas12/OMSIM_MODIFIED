@@ -161,13 +161,14 @@ class Noise:
                                         t_idx += 1
                 return molecule
 
-        def generate_molecule_clean(self, nicks, size):
+        def generate_molecule_clean(self, nicks, size, rf):
                 # determine read position
                 # save these three: shift, length and end, for each RMAP
                 shift, length, end = self.read_position(size)
+                s_return, l_return, e_return = shift, length, end
                 # abort if improper read position
                 if length > size or shift < 0 or (not self.settings.circular and end >= size):
-                        return (-1, [], [-1, -1])
+                        return (-1, [], [-1, -1],-1, -1,[-1])
                 # set metae4r for bed file
                 meta = [-1, shift]
                 # generate false positives
@@ -198,15 +199,15 @@ class Noise:
                 # remove strand and [T|F]P information and randomise TP
                 molecule = [[self.nick_position(p, self.settings.nick_sd)[0], p[-1]] for p in molecule]
                 molecule = [p for p in molecule if p[0] < length]
-                return length, molecule, meta, shift, end, true_rmaps
+                return length, molecule, meta, shift, end, true_rmaps, rf
 
-        def generate_molecule(self, nicks, size):
+        def generate_molecule(self, nicks, size, rf):
                 #determine read position
                 # save these three: shift, length and end, for each RMAP
                 shift, length, end = self.read_position(size)
                 #abort if improper read position
                 if length > size or shift < 0 or (not self.settings.circular and end >= size):
-                        return (-1, [], [-1, -1])
+                        return (-1, [], [-1, -1], -1, -1, [-1])
                 #set metae4r for bed file
                 meta = [-1, shift]
                 #generate false positives
@@ -237,7 +238,7 @@ class Noise:
                 # remove strand and [T|F]P information and randomise TP
                 molecule = [[self.nick_position(p, self.settings.nick_sd)[0], p[-1]] for p in molecule]
                 molecule = [p for p in molecule if p[0] < length]
-                return length, molecule, meta, shift, end, true_rmaps
+                return length, molecule, meta, shift, end, true_rmaps, rf
         
         
         def cut_long_molecule(self, l, m):
@@ -293,12 +294,30 @@ class Noise:
                 while size < self.settings.get_scan_size():
                         idx = bisect_left(cumSeqLens, random.random() * cumSeqLens[-1])
                         l = -1
-                        if clean:
+                        ##if clean:
+                        try:
                             while l < 0:
-                                l, m, meta, s, e, true_rmaps = self.generate_molecule_clean(fks[idx] if self.strand() else rcks[idx], seqLens[idx])
+                                rf = ""
+                                if self.strand():
+                                    inp = fks[idx]
+                                    rf = " forward"
+                                else:
+                                    inp = rcks[idx]
+                                    rf = " reverse"
+                                a = self.generate_molecule_clean(inp, seqLens[idx], rf)
+                                l, m, meta, s, e, true_rmaps, rf = a
+                        except ValueError:
+                            continue
                         else:
                             while l < 0:
-                                l, m, meta, s, e, true_rmaps = self.generate_molecule(fks[idx] if self.strand() else rcks[idx], seqLens[idx])
+                                rf = ""
+                                if self.strand():
+                                    inp = fks[idx]
+                                    rf = " forward"
+                                else:
+                                    inp = rcks[idx]
+                                    rf = " reverse"
+                                l, m, meta, s, e, true_rmaps, rf = self.generate_molecule(inp, seqLens[idx], rf)
 
 
                         meta[0] = idx
@@ -315,7 +334,7 @@ class Noise:
                                 molecule2 = []
                                 if self.settings.min_mol_len <= l:
                                         size += l
-                                        yield l,s,e, m, meta, true_rmaps
+                                        yield l,s,e, m, meta, true_rmaps, rf
         
         
         def chip_stretch_factor(self):
